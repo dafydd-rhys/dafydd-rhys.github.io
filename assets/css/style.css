@@ -632,6 +632,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 /*.isotope-overlay*/
 .isotope-overlay{
+    color: white;
     position:absolute;
     height:100%;
     width:100%;
