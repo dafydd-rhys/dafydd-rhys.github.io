@@ -1,1085 +1,1149 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dafydd-Rhys Maund — full-stack engineer at Hoowla, founder of FrameKit Studios. Side A: career. Side B: projects. Based in Wales."
+    />
+    <meta name="theme-color" content="#161310" />
+    <meta property="og:title" content="Dafydd-Rhys Maund — Portfolio" />
+    <meta
+      property="og:description"
+      content="Full-stack engineer at Hoowla, founder of FrameKit Studios. Side A: career. Side B: projects. Based in Wales."
+    />
+    <meta property="og:type" content="website" />
 
-    <head>
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Dafydd-Rhys Maund — Portfolio</title>
 
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,30..100;1,9..144,300..700,30..100&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>Dafydd-Rhys Maund Portfolio</title>
+    <script defer src="./scripts.js"></script>
+  </head>
+  <body>
+    <!-- ==================== MASTHEAD ==================== -->
+    <header class="masthead">
+      <div class="masthead-inner">
+        <div class="left">DM/01 · pressed in wales</div>
+        <div class="center">
+          <nav id="primary-nav">
+            <a href="#side-a" data-target="side-a" class="active">side a</a>
+            <a href="#side-b" data-target="side-b">side b</a>
+            <a href="#hidden" data-target="hidden">hidden</a>
+            <a href="#equipment" data-target="equipment">equipment</a>
+            <a href="#liner" data-target="liner">liner notes</a>
+          </nav>
+        </div>
+        <div class="right">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span>open to new work</span>
+        </div>
+      </div>
+    </header>
 
-        <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <main>
+      <!-- ==================== COVER / HERO ==================== -->
+      <section class="cover" id="cover" aria-label="Cover">
+        <div class="cover-text">
+          <div class="cover-meta">
+            <span><span class="swatch"></span>cat. dm/01</span>
+            <span>spring · mmxxvi</span>
+            <span>33 ⅓ rpm</span>
+            <span>independent release</span>
+          </div>
+          <h1 class="cover-title">
+            Dafydd-Rhys
+            <span class="surname">Maund.</span>
+          </h1>
+          <div class="cover-tag">
+            side a — the engineer / side b — the studio
+          </div>
+          <p class="cover-bio">
+            Full-stack engineer at Hoowla, MSc data scientist out of Swansea,
+            and the founder of FrameKit Studios — a one-person workshop for
+            tools that ought to exist. Builds them, breaks them, ships them
+            anyway.
+          </p>
+          <a href="#side-a" class="cover-cta">
+            drop the needle <span class="arrow">↓</span>
+          </a>
+        </div>
+        <div class="vinyl-stage" aria-hidden="true">
+          <div class="vinyl"></div>
+          <div class="vinyl-label">
+            <span class="lbl-title">Dafydd-Rhys</span>
+            <span>dm/01</span>
+            <span class="center-hole"></span>
+            <span class="lbl-meta">side a</span>
+            <span class="lbl-meta">2026</span>
+          </div>
+        </div>
+      </section>
 
-		<!--flat icon css-->
-		<link rel="stylesheet" href="assets/css/flaticon.css">
+      <!-- ==================== SIDE A — THE ENGINEER ==================== -->
+      <section id="side-a" aria-label="Side A — The Engineer">
+        <div class="side-strip">
+          <span><span class="label">side a</span> · the engineer</span>
+          <span class="runtime">4 tracks · 5y 8m</span>
+        </div>
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+        <h2 class="section-title">The <em>engineer.</em></h2>
 
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
-        <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        <p class="section-deck">
+          A run of work, study, and the occasional 2am hotfix. In chronological
+          order, more or less.
+        </p>
 
-    </head>
-	
-	<body>
-		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-		
-		<!-- top-area Start -->
-		<header class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+        <div class="tracklist reveal-stagger">
+          <article class="track" data-track-id="hoowla">
+            <div class="track-number">A1</div>
 
-			        <div class="container">
+            <div class="track-main">
+              <h3 class="track-title">
+                Hoowla <em>— full-stack engineer</em>
+                <span class="track-toggle">+</span>
+              </h3>
 
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">Dafydd-Rhys</a>
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
+              <div class="track-meta">
+                <span class="pip"
+                  >legal case-management · saas · full-stack ·</span
+                >
+                <span class="pip">swansea</span>
+                <span class="live">currently spinning</span>
+              </div>
 
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                <li class=" smooth-menu active"></li>
-								<li class="smooth-menu"><a href="#about">about</a></li>
-			                    <li class="smooth-menu"><a href="#education">education</a></li>
-			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
-								<li class="smooth-menu"><a href="#portfolio">projects</a></li>
-								<li class="smooth-menu"><a href="#profiles">Technologies</a></li>
-			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
-								<li class="smooth-menu"><a href="#certifications">certifications</a></li>
-			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    Full-stack engineer at Hoowla, a legal case-management SaaS
+                    platform, building and maintaining production features
+                    across JavaScript, HTML, CSS, PHP and SQL.
+                  </p>
 
-		    <div class="clearfix"></div>
+                  <p>
+                    Work spans the full software-development lifecycle:
+                    analysis, implementation, testing, deployment and support.
+                    Day to day, that means shipping feature work, reviewing
+                    code, debugging live production issues, writing rapid
+                    hotfixes, and carrying out root-cause analysis when
+                    production does something it absolutely should not.
+                  </p>
 
-		</header><!-- /.top-area-->
-		<!-- top-area End -->
-	
-		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hello <span>,</span> i am <br> Dafydd-Rhys <br> Maund <span>.</span>   </h2>
-							<p>Software and Data Engineer</p>
-							<a href="assets/download/CV.pdf" download>Download CV</a>
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
-			</div><!-- /.container-->
+                  <p>
+                    I have performed data migrations, where correctness, data
+                    integrity and careful rollout matter just as much as the
+                    code itself. Alongside the feature work, I contribute to
+                    system stability and performance through optimisation,
+                    testing, peer review, daily stand-ups and sprint planning.
+                  </p>
 
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
+                  <div class="track-tags">
+                    <span>php</span><span>javascript</span><span>sql</span>
+                    <span>html</span><span>css</span><span>agile</span>
+                    <span>code review</span><span>debugging</span>
+                    <span>data migration</span><span>production support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-		<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2>about me</h2>
-			</div>
-			<div class="container">
-				<div class="about-content">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-about-txt">
-								<h3>
-									Im a Software Engineer and Data Science Graduate. Achieving a First-Class Honours in my Bachelors in Software Engineering and expecting a Distinction in my Masters in Data Science from Swansea University.
-								</h3>
-								<p>
-									My journey bridges the worlds of innovative software development and insightful data analysis, allowing me to craft solutions that are both technically robust and data-driven. I thrive on tackling complex problems, creating intuitive applications, and uncovering actionable insights from data. Welcome to my portfolio—here, you’ll find a showcase of my projects and skills.
-								</p>
-								<div class="row">
-									<div class="col-sm-3">
-										<div class="single-about-add-info">
-											<h3>phone</h3>
-											<p>078300 47504</p>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>email</h3>
-											<p>dafyddrhys@proton.me</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-offset-1 col-sm-4">
-							<div class="single-about-img">
-								<img src="assets/images/about/face2.png" alt="profile_image">
-								<div class="about-list-icon">
-									<ul>
-										<li>
-											<a href="https://www.instagram.com/dafyddmxund/">
-												<i  class="fa fa-instagram" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
+            <div class="track-runtime">2025 — now</div>
+          </article>
 
-										
-										<li>
-											<a href="https://github.com/dafydd-rhys">
-												<i  class="fa fa-github" aria-hidden="true"></i>
-											</a>
-											
-										</li><!-- / li -->
-										<li>
-											<a href="https://www.linkedin.com/in/dafyddrhys/">
-												<i  class="fa fa-linkedin" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
+          <article class="track" data-track-id="msc">
+            <div class="track-number">A2</div>
 
-										
-									</ul><!-- / ul -->
-								</div><!-- /.about-list-icon -->
+            <div class="track-main">
+              <h3 class="track-title">
+                MSc Data Science <em>— Swansea University</em>
+                <span class="track-toggle">+</span>
+              </h3>
 
-							</div>
+              <div class="track-meta">
+                <span class="pip">distinction · 75% ·</span>
+                <span class="pip">machine learning · big data · thesis ·</span>
+                <span class="pip">hybrid ml chatbot</span>
+              </div>
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--/.about-->
-		<!--about end -->
-		
-		<!--education start -->
-		<section id="education" class="education">
-			<div class="section-heading text-center">
-				<h2>education</h2>
-			</div>
-			<div class="container">
-				<div class="education-horizontal-timeline">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2018 - 2020</h2>
-									<h3>A levels <span>-</span> AABB</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											Blaenau Gwent Learning Zone
-										</h4>
-										<h5>Ebbw Vale, United Kingdom</h5>
-										<p class="description">
-											Achieved an A in Computer Science, A in Welsh Baccalaureate, B in ICT, and B in Geography. I learned key programming languages, algorithms, data structures, databases, and network management.
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2020 - 2024</h2>
-									<h3>BSc Software Engineering</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											Swansea University
-										</h4>
-										<h5>Swansea, United Kingdom</h5>
-										<p class="description">
-											I learned programming, software design, algorithms, data structures, and system architecture, gaining practical experience in both front-end and back-end development.
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2024 - 2025</h2>
-									<h3>MSc Data Science</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal spacial-horizontal-line
-									"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											Swansea University
-										</h4>
-										<h5>Swansea, United Kingdom</h5>
-										<p class="description">
-											I learn data analysis, machine learning, statistical modeling, and data visualization, while gaining hands-on experience with programming languages like Python and tools for big data processing.
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    Master's degree in Data Science, completed with Distinction.
+                    The course built on my software-engineering background with
+                    modules across big data, data mining, data visualisation,
+                    machine learning, computer vision, deep learning,
+                    optimisation, modelling, verification, operating systems,
+                    architectures and research methods.
+                  </p>
 
-		</section><!--/.education-->
-		<!--education end -->
+                  <p>
+                    My thesis focused on a hybrid machine-learning and
+                    rule-based support chatbot for university students, staff
+                    and visitors. I built the system end-to-end using Python,
+                    FastAPI, Rasa, PostgreSQL and a RoBERTa-based intent
+                    classifier.
+                  </p>
 
-		<!--skills start -->
-		<section id="skills" class="skills">
-				<div class="skill-content">
-					<div class="section-heading text-center">
-						<h2>skills</h2>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">software development</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="10" aria-valuemax="100" style="">
-													  
-												</div>
-											</div>
-											<h3>97%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">data structures & algorithms</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>95%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">cloud computing</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>80%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">critical thinking & problem solving</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>95%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">database management</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-													
-												</div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">machine learning & statistics</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">version control</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>100%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">communication & collaboration</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-						</div><!-- /.row -->
-					</div>	<!-- /.container -->		
-				</div><!-- /.skill-content-->
+                  <p>
+                    The architecture combined machine-learning classification
+                    for flexible intent detection with rule-based dialogue flows
+                    for parts of the system that needed tighter control,
+                    including escalation, ticket submission and sensitive-topic
+                    handling. The result was a modular support system with
+                    separable frontend, API, conversational logic and
+                    data-storage layers.
+                  </p>
 
-		</section><!--/.skills-->
-		<!--skills end -->
+                  <div class="track-tags">
+                    <span>python</span><span>fastapi</span><span>rasa</span>
+                    <span>roberta</span><span>postgresql</span><span>nlp</span>
+                    <span>machine learning</span><span>data visualisation</span>
+                    <span>big data</span><span>optimisation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-		<!--portfolio start -->
-		<section id="portfolio" class="portfolio">
-			<div class="portfolio-details">
-				<div class="section-heading text-center">
-					<h2>projects</h2>
-				</div>
-				<div class="container">
-					<div class="portfolio-content">
-						<div class="isotope">
-							<div class="row">
+            <div class="track-runtime">2024 — 2025</div>
+          </article>
 
-								<div class="col-sm-4">
-									<div class="item">
-										<a href="https://github.com/dafydd-rhys/ai-powered-career-assistant">
-											<img src="assets/images/portfolio/p11.jpg" alt="AI Powered Career Assistant" />
-											<div class="isotope-overlay">
-												AI Powered Career Assistant
-											</div>
-										</a>
-									</div>
-									<div class="item">
-										<a href="https://github.com/dafydd-rhys/galactic-siege">
-											<img src="assets/images/portfolio/p12.jpg" alt="Galactic Siege" />
-											<div class="isotope-overlay">
-												Galactic Siege
-											</div>
-										</a>
-									</div>
-									<div class="item">
-										<a href="https://github.com/dafydd-rhys/sphere-ray-tracing">
-											<img src="assets/images/portfolio/p13.jpg" alt="Sphere Ray Tracing" />
-											<div class="isotope-overlay">
-												Sphere Ray Tracing
-											</div>
-										</a>
-									</div>
-									<div class="item">
-										<a href="https://github.com/dafydd-rhys/customer-retention-analysis">
-											<img src="assets/images/portfolio/p14.png" alt="Customer Retention Analysis" />
-											<div class="isotope-overlay">
-												Customer Retention Analysis
-											</div>
-										</a>
-									</div>
-								</div>
-								
-								<div class="col-sm-4">
-									<div class="item">
-										<a href="https://postercomposer.com/">
-											<img src="assets/images/portfolio/p15.jpg" alt="Album Poster Composer" />
-											<div class="isotope-overlay">
-												Album Poster Composer
-											</div>
-										</a>
-									</div>
-									<div class="item">
-										<a href="https://github.com/dafydd-rhys/restaurant-reviewer">
-											<img src="assets/images/portfolio/p6.jpg" alt="Restaurant Reviewer" />
-											<div class="isotope-overlay">
-												Restaurant Reviewer
-											</div>
-										</a>
-									</div>
-								</div>
-								
-								<div class="col-sm-4">
-									<div class="item">
-										<a href="https://github.com/dafydd-rhys/full-stack-entertainment-react">
-											<img src="assets/images/portfolio/p7.jpg" alt="Remote Synchronized Media Player" />
-											<div class="isotope-overlay">
-												Remote Synchronized Media Player
-											</div>
-										</a>
-									</div>
-									<div class="item">
-										<a href="https://github.com/dafydd-rhys/social-post-app">
-											<img src="assets/images/portfolio/p8.jpg" alt="Social-Post" />
-											<div class="isotope-overlay">
-												Social-Post
-											</div>
-										</a>
-									</div>
-									<div class="item">
-										<a href="https://github.com/dafydd-rhys/pc-cleaner">
-											<img src="assets/images/portfolio/p9.jpg" alt="PCleaner" />
-											<div class="isotope-overlay">
-												PCleaner
-											</div>
-										</a>
-									</div>
-									<div class="item">
-										<a href="https://github.com/dafydd-rhys/visual-path-finder">
-											<img src="assets/images/portfolio/p10.png" alt="Visual Path Finder" />
-											<div class="isotope-overlay">
-												Visual Path Finder
-											</div>
-										</a>
-									</div>
-								</div>
-								
-							
-						</div><!--/.isotope-->
-					</div><!--/.gallery-content-->
-				</div><!--/.container-->
-			</div><!--/.portfolio-details-->
+          <article class="track" data-track-id="bsc">
+            <div class="track-number">A3</div>
 
-		</section><!--/.portfolio-->
+            <div class="track-main">
+              <h3 class="track-title">
+                BSc Software Engineering <em>— Swansea University</em>
+                <span class="track-toggle">+</span>
+              </h3>
 
+              <div class="track-meta">
+                <span class="pip">first class · 78% ·</span>
+                <span class="pip">excellence scholarship ·</span>
+                <span class="pip"
+                  >real-time systems · web · software engineering</span
+                >
+              </div>
 
-		<!--profiles start -->
-		<section id="profiles" class="profiles">
-			<div class="profiles-details">
-				<div class="section-heading text-center">
-					<h2>Languages & Frameworks</h2>
-				</div>
-				<div class="container">
-					<div class="profiles-content">
-						<div class="row">
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href="https://www.java.com" target="_blank"><i class="fa-brands fa-java"></i></a>
-										<div class="profile-icon-name">Java</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://www.java.com" target="_blank"><i class="fa-brands fa-java"></i></a>
-											<div class="profile-icon-name">Java</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-js"></i></a>
-										<div class="profile-icon-name">JavaScript</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-js"></i></a>
-											<div class="profile-icon-name">JavaScript</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href="https://www.python.org" target="_blank"><i class="fa-brands fa-python"></i></a>
-										<div class="profile-icon-name">Python</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://www.python.org" target="_blank"><i class="fa-brands fa-python"></i></a>
-											<div class="profile-icon-name">Python</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile profile-no-border">
-									<div class="profile-txt">
-										<a href="https://isocpp.org" target="_blank"><i class="fa-brands fa-code"></i></a>
-										<div class="profile-icon-name">C++</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://isocpp.org" target="_blank"><i class="fa-brands fa-code"></i></a>
-											<div class="profile-icon-name">C++</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="profile-border"></div>
-						<div class="row">
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href="https://reactjs.org" target="_blank"><i class="fa-brands fa-react"></i></a>
-										<div class="profile-icon-name">React</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://reactjs.org" target="_blank"><i class="fa-brands fa-react"></i></a>
-											<div class="profile-icon-name">React</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href="https://nodejs.org" target="_blank"><i class="fa-brands fa-node-js"></i></a>
-										<div class="profile-icon-name">Node.js</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://nodejs.org" target="_blank"><i class="fa-brands fa-node-js"></i></a>
-											<div class="profile-icon-name">Node.js</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href="https://www.mysql.com" target="_blank"><i class="fa-solid fa-database"></i></a>
-										<div class="profile-icon-name">MySQL</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://www.mysql.com" target="_blank"><i class="fa-solid fa-database"></i></a>
-											<div class="profile-icon-name">MySQL</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile profile-no-border">
-									<div class="profile-txt">
-										<a href="https://firebase.google.com" target="_blank"><i class="fa fa-google"></i></a>
-										<div class="profile-icon-name">Firebase</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://firebase.google.com" target="_blank"><i class="fa fa-google"></i></a>
-											<div class="profile-icon-name">Firebase</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="profile-border"></div>
-						<div class="row">
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href="https://git-scm.com" target="_blank"><i class="fa-brands fa-github"></i></a>
-										<div class="profile-icon-name">Git</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://git-scm.com" target="_blank"><i class="fa-brands fa-github"></i></a>
-											<div class="profile-icon-name">Git</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href="https://www.docker.com" target="_blank"><i class="fa-brands fa-docker"></i></a>
-										<div class="profile-icon-name">Docker</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://www.docker.com" target="_blank"><i class="fa-brands fa-docker"></i></a>
-											<div class="profile-icon-name">Docker</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href="https://developer.android.com/studio" target="_blank"><i class="fa-brands fa-android"></i></a>
-										<div class="profile-icon-name">Android Studio</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://developer.android.com/studio" target="_blank"><i class="fa-brands fa-android"></i></a>
-											<div class="profile-icon-name">Android Studio</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile profile-no-border">
-									<div class="profile-txt">
-										<a href="https://unity.com" target="_blank"><i class="fa-brands fa-unity"></i></a>
-										<div class="profile-icon-name">Unity</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href="https://unity.com" target="_blank"><i class="fa-brands fa-unity"></i></a>
-											<div class="profile-icon-name">Unity</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    First Class Honours in Software Engineering, awarded the
+                    Excellence Scholarship. The degree gave me a broad software
+                    engineering foundation across programming, algorithms,
+                    databases, concurrency, declarative programming, web
+                    services, software testing, project planning, mobile apps,
+                    embedded systems, graphics and games programming.
+                  </p>
 
-		<!--experience start -->
-		<section id="experience" class="experience">
-			<div class="section-heading text-center">
-				<h2>experience</h2>
-			</div>
-			<div class="container">
-				<div class="experience-content">
-						<div class="main-timeline">
-							<ul>
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2024 - Present</h2>
-													<h3>Master's thesis</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															AI Powered Career Assistant
-														</h4>
-														<h5>Software Engineering Project</h5>
-														<p class="description">
-															AI-Powered Career Assistant simplifies your job search with AI-driven tools. Upload your CV to get tailored job matches, AI-scored improvements, personalized cover letters, and interview prep questions—all designed to boost your career success.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+                  <p>
+                    Final-year dissertation: a real-time synchronised
+                    media-streaming application where users could watch, listen
+                    and chat together across YouTube, SoundCloud, Twitch and
+                    Facebook in shared rooms.
+                  </p>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															SpaceX capstone Project
-														</h4>
-														<h5>Data Science Project</h5>
-														<p class="description">
-															A project focused on collecting, analyzing, and visualizing SpaceX rocket data, including metrics on rocket launches, landings, and performance of various rocket models.														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2024 Q4
-													</h2>
-													<h3>Machine Learning</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+                  <p>
+                    Built with React, Node.js and Socket.io, the project handled
+                    persistent rooms, playback synchronisation, drift correction
+                    and live chat. It was a proper full-stack build: frontend
+                    state, backend events, real-time communication, third-party
+                    media integrations and enough edge cases to make timing bugs
+                    feel personal.
+                  </p>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2024 Q3</h2>
-													<h3>Achieved Certification</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															IBM Data Science Professional
-														</h4>
-														<h5>IBM</h5>
-														<p class="description">
-															6-month comprehensive program covering Python, SQL, Data Analysis and Machine Learning providing hands on experience with projects and foundational skills in data science.														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+                  <p>
+                    The course also developed the less glamorous but important
+                    parts of engineering: requirements analysis, project
+                    specification, documentation, testing, planning, teamwork
+                    and turning a rough idea into something that can actually be
+                    delivered.
+                  </p>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Swansea University
-														</h4>
-														<h5>Swansea, United Kingdom</h5>
-														<p class="description">
-															Synchronous Media Streaming Application, built with React, synchronizes music and video playback from YouTube, SoundCloud, Facebook, and Twitch, allowing users to stream together in real-time. Features live chat for real-time interaction.														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2024 Q2
-													</h2>
-													<h3>Dissertation Project</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+                  <div class="track-tags">
+                    <span>react</span><span>node.js</span><span>socket.io</span>
+                    <span>real-time</span><span>full-stack</span>
+                    <span>databases</span><span>algorithms</span>
+                    <span>software testing</span><span>web services</span>
+                    <span>project management</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2024 Q1</h2>
-													<h3>Mobile Application</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Swansea University
-														</h4>
-														<h5>swansea, united Kingdom</h5>
-														<p class="description">
-														Restaurant Reviewer is an interactive platform for restaurant reviews. Users can leave detailed feedback, interact with comments, and view likes and dislikes. The platform provides menus, opening times, and personalized user profiles, fostering a community-driven dining experience.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+            <div class="track-runtime">2020 — 2024</div>
+          </article>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Swansea University
-														</h4>
-														<h5>Swansea, United Kingdom</h5>
-														<p class="description">
-															Award received for the best speech about dissertation project to technical and non technical audiences.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2023 Q4
-													</h2>
-													<h3>Speech Award - Baskerville</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+          <article class="track" data-track-id="oss">
+            <div class="track-number">A4</div>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2023 Q4</h2>
-													<h3>Web Application</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Swansea University
-														</h4>
-														<h5>swansea, united Kingdom</h5>
-														<p class="description">
-															Social Post App is a web-based platform for creating and interacting with posts. Users can search and filter content, manage personal profiles, and handle account settings. The app offers different access levels and authority for users, and integrates external APIs.														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+            <div class="track-main">
+              <h3 class="track-title">
+                Open source <em>— practical maintenance work</em>
+                <span class="track-toggle">+</span>
+              </h3>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Swansea University
-														</h4>
-														<h5>Swansea, United Kingdom</h5>
-														<p class="description">
-															Galactic Siege is a Unity game that combines Asteroids and Space Invaders. Players pilot a spaceship, battling diverse enemies with unique abilities. The game features dynamic power-ups and special abilities, offering a challenging and engaging space defence experience.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2023 Q3
-													</h2>
-													<h3>Unity Game Application</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+              <div class="track-meta">
+                <span class="pip">phpword · documentation · bug fixes ·</span>
+                <span class="pip">small useful patches</span>
+              </div>
 
-							</ul>
-						</div><!--.main-timeline-->
-					</div><!--.experience-content-->
-			</div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    Open-source contributions to PHPOffice/PHPWord and other
+                    libraries I use or rely on. Mostly the kind of work that
+                    looks small from the outside but matters in real projects:
+                    bug fixes, documentation improvements, examples, edge-case
+                    investigation and clearer reproduction steps.
+                  </p>
 
-		</section><!--/.experience-->
-		<!--experience end -->
+                  <p>
+                    The next step is to contribute more deliberately across the
+                    stack I work with: PHP tooling, backend frameworks, API
+                    libraries, documentation, testing utilities and data/ML
+                    projects connected to my master's work.
+                  </p>
 
-		<!--profiles end -->
+                  <p>
+                    My focus is useful maintenance over vanity contributions:
+                    failing test cases, clearer docs, small bug fixes, migration
+                    notes, typed interfaces, validation edge cases and anything
+                    that makes a project easier for the next developer to use.
+                  </p>
 
-		
-		<!--portfolio end -->	
+                  <div class="track-tags">
+                    <span>php</span><span>open source</span><span>git</span>
+                    <span>documentation</span><span>bug fixes</span>
+                    <span>testing</span><span>maintenance</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-		<section id="certifications" class="clients">
-			<div class="section-heading text-center">
-				<h2>Certifications</h2>
-			</div>
-			<div class="clients-area">
-				<div class="container">
-					<div class="owl-carousel owl-theme" id="client">
-						<div class="item">
-							<a href="https://www.ibm.com/training/badge/data-science-professional-certificate">
-								<img src="assets/images/ibm.png" alt="brand-image" />
-							</a>
-							
-						</div><!--/.item-->
-						<div class="item">
-							<a href="https://www.coursera.org/learn/foundations-of-cybersecurity">
-								<img src="assets/images/google.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="https://www.coursera.org/learn/ai-infrastructure-operations-fundamentals">
-								<img src="assets/images/nvidia.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="https://www.coursera.org/learn/introduction-git-github">
-								<img src="assets/images/github.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-					</div><!--/.owl-carousel-->
-				</div><!--/.container-->
-			</div><!--/.clients-area-->
+            <div class="track-runtime">ongoing</div>
+          </article>
+        </div>
 
-		</section><!--/.clients-->
+        <div class="flip-cta">
+          <span class="label">end of side a</span>
+          <button
+            type="button"
+            id="flip-btn"
+            aria-label="Flip the record to side B"
+          >
+            <span class="mini-vinyl"></span>
+            flip the record
+            <span class="mini-vinyl"></span>
+          </button>
+        </div>
+      </section>
 
-		<!--contact start -->
-		<section id="contact" class="contact">
-			<div class="section-heading text-center">
-				<h2>contact me</h2>
-			</div>
-			<div class="container">
-				<div class="contact-content">
-					<div class="row">
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-form">
-									<form id="contact-form">
-									  <div class="row">
-										<div class="col-sm-6 col-xs-12">
-										  <div class="form-group">
-											<input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-										  </div><!--/.form-group-->
-										</div><!--/.col-->
-										<div class="col-sm-6 col-xs-12">
-										  <div class="form-group">
-											<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
-										  </div><!--/.form-group-->
-										</div><!--/.col-->
-									  </div><!--/.row-->
-									  <div class="row">
-										<div class="col-sm-12">
-										  <div class="form-group">
-											<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-										  </div><!--/.form-group-->
-										</div><!--/.col-->
-									  </div><!--/.row-->
-									  <div class="row">
-										<div class="col-sm-12">
-										  <div class="form-group">
-											<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
-										  </div><!--/.form-group-->
-										</div><!--/.col-->
-									  </div><!--/.row-->
-									  <div class="row">
-										<div class="col-sm-12">
-										  <div class="single-contact-btn">
-											<a class="contact-btn" href="#" id="submit-btn" role="button">Submit</a>
-										  </div><!--/.single-single-contact-btn-->
-										</div><!--/.col-->
-									  </div><!--/.row-->
-									</form><!--/form-->
-								  </div><!--/.contact-form-->
-								  
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-adress">
-									<div class="contact-add-head">
-										<h3>Dafydd-Rhys Maund</h3>
-										<p>Software/Data Engineer</p>
-									</div>
-									<div class="contact-add-info">
-										<div class="single-contact-add-info">
-											<h3>phone</h3>
-											<p>+44 7830047504</p>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>email</h3>
-											<p>dafyddrhys@proton.me</p>
-										</div>
-									</div>
-								</div><!--/.contact-adress-->
-								<div class="hm-foot-icon">
-									<ul>
-										<li><a href="https://www.instagram.com/dafyddmxund/"><i class="fa fa-instagram"></i></a></li><!--/li-->
-										<li><a href="https://github.com/dafydd-rhys"><i class="fa fa-github"></i></a></li><!--/li-->
-										<li><a href="https://www.linkedin.com/in/dafyddrhys/"><i class="fa fa-linkedin"></i></a></li><!--/li-->	
-									</ul><!--/ul-->
-								</div><!--/.hm-foot-icon-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.contact-content-->
-			</div><!--/.container-->
+      <!-- ==================== SIDE B — THE STUDIO ==================== -->
+      <section id="side-b" aria-label="Side B — The Studio">
+        <div class="side-strip">
+          <span><span class="label">side b</span> · the studio</span>
+          <span class="runtime">12 tracks · selected works</span>
+        </div>
+        <h2 class="section-title">The <em>studio.</em></h2>
+        <p class="section-deck">
+          B-sides, deep cuts, and a couple of singles. Live links where they
+          exist; source on github for the rest.
+        </p>
 
-		</section><!--/.contact-->
-		<!--contact end -->
-		
-		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+        <div class="tracklist reveal-stagger">
+          <article class="track" data-track-id="refinery">
+            <div class="track-number">B1</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                Maunds Refinery <em>— single</em
+                ><span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="live">live · maunds-refinery.com</span>
+                <span class="pip">api-first html toolkit</span>
+                <span class="pip">javascript · node · express</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    An API-first HTML refinery that cleans, prettifies,
+                    condenses, and optimises markup. Designed to be safe by
+                    default, deterministic, and suitable for automated pipelines
+                    — the kind of thing you reach for when you need to trust the
+                    output, not eyeball it.
+                  </p>
+                  <div class="track-tags">
+                    <span>javascript</span><span>node.js</span
+                    ><span>express</span><span>npm package</span
+                    ><span>html</span><span>css</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://maunds-refinery.com"
+                      target="_blank"
+                      rel="noopener"
+                      >visit site <span class="arrow">↗</span></a
+                    >
+                    <a
+                      href="https://github.com/dafydd-rhys/maunds-refinery"
+                      target="_blank"
+                      rel="noopener"
+                      >source <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2026</div>
+          </article>
 
-		<script src="assets/js/jquery.js"></script>
+          <article class="track" data-track-id="sql-duel">
+            <div class="track-number">B2</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                SQL Duel <em>— single</em><span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="live">live · dafydd-rhys.github.io/sql-duel</span>
+                <span class="pip">browser app</span>
+                <span class="pip">neon-styled</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    Define a database schema, write two SELECT queries, and find
+                    out which one is likely to cost you less. Estimates relative
+                    cost from indexes, row counts, joins, filters, and sort
+                    behaviour, then explains why.
+                  </p>
+                  <div class="track-tags">
+                    <span>javascript</span><span>sql</span
+                    ><span>query optimisation</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://dafydd-rhys.github.io/sql-duel"
+                      target="_blank"
+                      rel="noopener"
+                      >visit site <span class="arrow">↗</span></a
+                    >
+                    <a
+                      href="https://github.com/dafydd-rhys/sql-duel"
+                      target="_blank"
+                      rel="noopener"
+                      >source <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2026</div>
+          </article>
 
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/email.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
-		
-		<!-- jquery.sticky.js -->
-		<script src="assets/js/jquery.sticky.js"></script>
-		
-		<!-- for progress bar start-->
+          <article class="track" data-track-id="degree-classify">
+            <div class="track-number">B3</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                Degree Classify <em>— single</em
+                ><span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="live">live · degreeclassify.co.uk</span>
+                <span class="pip">90+ uk universities</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    A web platform that calculates UK degree outcomes using
+                    institution-specific classification rules across 90+
+                    universities. Grade analysis, module planning, and progress
+                    tracking — built for the students who actually need to know
+                    what they need to score.
+                  </p>
+                  <div class="track-tags">
+                    <span>javascript</span><span>full-stack</span
+                    ><span>framekit</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://degreeclassify.co.uk"
+                      target="_blank"
+                      rel="noopener"
+                      >visit site <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2025</div>
+          </article>
 
-		<!-- progressbar js -->
-		<script src="assets/js/progressbar.js"></script>
+          <article class="track" data-track-id="poster-composer">
+            <div class="track-number">B4</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                Poster Composer <em>— single</em
+                ><span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="live">live · postercomposer.com</span>
+                <span class="pip">spotify api</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    A poster-generation platform for custom album artwork.
+                    Editable templates, dynamic rendering, and a Spotify API
+                    integration that pulls real album data so the poster you
+                    make actually matches the record on your shelf. Reusable
+                    templates, edit-preview-download workflow.
+                  </p>
+                  <div class="track-tags">
+                    <span>javascript</span><span>spotify api</span
+                    ><span>canvas</span><span>framekit</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://postercomposer.com"
+                      target="_blank"
+                      rel="noopener"
+                      >visit site <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2024</div>
+          </article>
 
-		<!-- appear js -->
-		<script src="assets/js/jquery.appear.js"></script>
+          <article class="track" data-track-id="sens-bench">
+            <div class="track-number">B5</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                Sens-Bench <em>— in development</em
+                ><span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="pip">unity · c#</span>
+                <span class="pip">psychological deduction</span>
+                <span class="pip">framekit studios</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    A psychological deduction game where the player audits a
+                    casino to identify anomalies in reality disguised as
+                    probability. Built in Unity. Wears its theme on its sleeve.
+                  </p>
+                  <div class="track-tags">
+                    <span>c#</span><span>unity</span><span>game design</span
+                    ><span>framekit</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">in dev</div>
+          </article>
 
-		<!-- for progress bar end -->
+          <article class="track" data-track-id="uni-chatbot">
+            <div class="track-number">B6</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                Swansea Uni Chatbot <em>— msc thesis</em
+                ><span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="pip">rasa · roberta · fastapi</span>
+                <span class="pip">production-ready</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    An IT-services chatbot for Swansea University. Trained on
+                    real helpline data, leveraging NLP and rule-based dialogue
+                    flows to handle support requests at scale. The thesis
+                    project that turned into something the university could
+                    actually use.
+                  </p>
+                  <div class="track-tags">
+                    <span>python</span><span>rasa</span><span>react</span
+                    ><span>node.js</span><span>postgresql</span><span>nlp</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://github.com/dafydd-rhys/swansea-uni-chatbot"
+                      target="_blank"
+                      rel="noopener"
+                      >source <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2025</div>
+          </article>
 
-		<!--owl.carousel.js-->
-        <script src="assets/js/owl.carousel.min.js"></script>
+          <article class="track" data-track-id="watchalong">
+            <div class="track-number">B7</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                Watchalong <em>— bsc dissertation</em
+                ><span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="pip">react · socket.io</span>
+                <span class="pip">multi-platform sync</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    A synchronous media-streaming app — watch and listen
+                    together across YouTube, SoundCloud, Twitch, and Facebook in
+                    real time. The watchalong / listenalong service I wanted to
+                    exist. Drift correction, persistent rooms, chat that doesn't
+                    break.
+                  </p>
+                  <div class="track-tags">
+                    <span>react</span><span>node.js</span><span>socket.io</span
+                    ><span>real-time</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://github.com/dafydd-rhys/full-stack-entertainment-react"
+                      target="_blank"
+                      rel="noopener"
+                      >source <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2024</div>
+          </article>
 
+          <article class="track" data-track-id="text-editor">
+            <div class="track-number">B8</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                Real-time text editor<span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="pip">collaborative · multi-user</span>
+                <span class="pip">quill · mongodb</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    A real-time collaborative editor — Google-Docs-style
+                    multi-user editing, rich-text formatting, autosaves to
+                    MongoDB, persistent sessions. React + Quill + Socket.io.
+                  </p>
+                  <div class="track-tags">
+                    <span>react</span><span>quill.js</span><span>socket.io</span
+                    ><span>mongodb</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://github.com/dafydd-rhys/real-time-text-editor"
+                      target="_blank"
+                      rel="noopener"
+                      >source <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2025</div>
+          </article>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        
-        <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
-	
+          <article class="track" data-track-id="land-cover">
+            <div class="track-number">B9</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                Land cover detection<span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="pip">cnn · svd · hog</span>
+                <span class="pip">satellite imagery</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    A machine-learning pipeline classifying land-cover types
+                    from satellite and aerial imagery. SVD for dimensionality,
+                    HoG features, CNN on top. Comparing classical and deep
+                    approaches end-to-end.
+                  </p>
+                  <div class="track-tags">
+                    <span>python</span><span>cnn</span
+                    ><span>computer vision</span><span>jupyter</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://github.com/dafydd-rhys/land-cover-detection"
+                      target="_blank"
+                      rel="noopener"
+                      >source <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2024</div>
+          </article>
+
+          <article class="track" data-track-id="galactic">
+            <div class="track-number">B10</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                Galactic Siege<span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="pip">unity · c#</span>
+                <span class="pip">arcade shooter</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    A Unity arcade shooter — Asteroids meets Space Invaders.
+                    Diverse enemy types, dynamic power-ups, special abilities.
+                    Built mostly because it was fun to build.
+                  </p>
+                  <div class="track-tags">
+                    <span>c#</span><span>unity</span><span>game design</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://github.com/dafydd-rhys/galactic-siege"
+                      target="_blank"
+                      rel="noopener"
+                      >source <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2024</div>
+          </article>
+
+          <article class="track" data-track-id="spacex">
+            <div class="track-number">B11</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                SpaceX data analysis<span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="pip">data science · viz</span>
+                <span class="pip">launches & landings</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    End-to-end analysis of SpaceX launch and landing data —
+                    collection, cleaning, exploratory analysis, and
+                    visualisation across rocket models and mission profiles.
+                  </p>
+                  <div class="track-tags">
+                    <span>python</span><span>pandas</span><span>matplotlib</span
+                    ><span>jupyter</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://github.com/dafydd-rhys/spacex-data-analysis"
+                      target="_blank"
+                      rel="noopener"
+                      >source <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2024</div>
+          </article>
+
+          <article class="track" data-track-id="path-finder">
+            <div class="track-number">B12</div>
+            <div class="track-main">
+              <h3 class="track-title">
+                Visual path finder<span class="track-toggle">+</span>
+              </h3>
+              <div class="track-meta">
+                <span class="pip">a* · algorithm viz</span>
+                <span class="pip">java</span>
+              </div>
+              <div class="track-liner">
+                <div class="track-liner-inner">
+                  <p>
+                    An interactive A* pathfinder. Drop blockers, set multiple
+                    goals, watch the algorithm reason its way through. Built to
+                    make the heuristic stop being abstract.
+                  </p>
+                  <div class="track-tags">
+                    <span>java</span><span>algorithms</span><span>a*</span>
+                  </div>
+                  <div class="track-actions">
+                    <a
+                      href="https://github.com/dafydd-rhys/visual-path-finder"
+                      target="_blank"
+                      rel="noopener"
+                      >source <span class="arrow">↗</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="track-runtime">2024</div>
+          </article>
+        </div>
+
+        <div class="flip-cta">
+          <span class="label">end of side b · full archive on github</span>
+          <a
+            href="https://github.com/dafydd-rhys"
+            target="_blank"
+            rel="noopener"
+          >
+            <button type="button">
+              <span class="mini-vinyl"></span>
+              full discography
+              <span class="mini-vinyl"></span>
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <!-- ==================== HIDDEN TRACK — FRAMEKIT ==================== -->
+      <section
+        id="hidden"
+        class="hidden-track"
+        aria-label="Hidden Track — FrameKit Studios"
+      >
+        <div class="side-strip">
+          <span
+            ><span class="label">hidden track</span> · framekit studios</span
+          >
+          <span class="runtime">label · founded mmxxiv</span>
+        </div>
+        <h2 class="section-title">The <em>label.</em></h2>
+
+        <div class="hidden-content">
+          <div class="hidden-prose">
+            <p>
+              FrameKit Studios is the imprint I'm building outside of work hours
+              — a small workshop for tools that ought to exist but don't, plus
+              the occasional game that's too strange for anyone else to
+              commission.
+            </p>
+            <p>
+              Two products are live and in use today. A third is in active
+              development. More on the way; the catalogue is meant to grow
+              slowly and deliberately, not all at once.
+            </p>
+            <p>
+              <em
+                >If you're a developer, a designer, or you just have an idea you
+                want built — get in touch. The studio takes on selected
+                work.</em
+              >
+            </p>
+          </div>
+
+          <div class="release-list">
+            <h4>Catalogue</h4>
+            <div class="release">
+              <a
+                href="https://maunds-refinery.com"
+                target="_blank"
+                rel="noopener"
+                >Maund's Refinery</a
+              >
+              <span class="status">live</span>
+            </div>
+            <div class="release">
+              <a
+                href="https://degreeclassify.co.uk"
+                target="_blank"
+                rel="noopener"
+                >Degree Classify</a
+              >
+              <span class="status">live</span>
+            </div>
+            <div class="release">
+              <a
+                href="https://postercomposer.com"
+                target="_blank"
+                rel="noopener"
+                >Poster Composer</a
+              >
+              <span class="status">live</span>
+            </div>
+            <div class="release">
+              <span>Sens-Bench</span>
+              <span class="status dev">in dev</span>
+            </div>
+            <div class="release">
+              <span>Untitled — TBA</span>
+              <span class="status next">soon</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== EQUIPMENT ==================== -->
+      <section id="equipment" aria-label="Equipment used in production">
+        <div class="side-strip">
+          <span><span class="label">equipment</span> · used in production</span>
+          <span class="runtime">stack · tooling · practice</span>
+        </div>
+        <h2 class="section-title">The <em>kit.</em></h2>
+
+        <div class="equipment-grid reveal-stagger">
+          <div class="equipment-group">
+            <h4>Languages</h4>
+            <ul>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>HTML / CSS</li>
+              <li>C#</li>
+            </ul>
+          </div>
+          <div class="equipment-group">
+            <h4>Frameworks</h4>
+            <ul>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>FastAPI</li>
+              <li>Rasa</li>
+              <li>Unity</li>
+            </ul>
+          </div>
+          <div class="equipment-group">
+            <h4>Databases</h4>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>MariaDB</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div class="equipment-group">
+            <h4>DevOps & tooling</h4>
+            <ul>
+              <li>Git</li>
+              <li>Docker</li>
+              <li>CI / CD</li>
+              <li>AWS</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+          <div class="equipment-group">
+            <h4>Practice</h4>
+            <ul>
+              <li>Agile / Scrum</li>
+              <li>Unit testing</li>
+              <li>Code review</li>
+              <li>Debugging</li>
+              <li>Performance work</li>
+              <li>Data migrations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== AWARDS ==================== -->
+      <section id="awards" aria-label="Awards and credits">
+        <div class="side-strip">
+          <span><span class="label">awards</span> · credits</span>
+          <span class="runtime">scholarship · certifications</span>
+        </div>
+        <h2 class="section-title">Awards <em>& credits.</em></h2>
+
+        <div class="awards-list reveal-stagger">
+          <div class="award featured">
+            <div class="award-no">★</div>
+            <div>
+              <div class="award-title"><em>Excellence Scholarship</em></div>
+              <div class="award-issuer">Swansea University</div>
+            </div>
+            <div class="award-year">2020-2025</div>
+          </div>
+          <div class="award">
+            <div class="award-no">01</div>
+            <div>
+              <div class="award-title">
+                Data Science Professional Certificate
+              </div>
+              <div class="award-issuer">IBM</div>
+            </div>
+            <div class="award-year">2025</div>
+          </div>
+          <div class="award">
+            <div class="award-no">02</div>
+            <div>
+              <div class="award-title">AI Infrastructure & Operations</div>
+              <div class="award-issuer">Nvidia</div>
+            </div>
+            <div class="award-year">2024</div>
+          </div>
+          <div class="award">
+            <div class="award-no">03</div>
+            <div>
+              <div class="award-title">Applied Data Science Capstone</div>
+              <div class="award-issuer">IBM</div>
+            </div>
+            <div class="award-year">2024</div>
+          </div>
+          <div class="award">
+            <div class="award-no">04</div>
+            <div>
+              <div class="award-title">Git & GitHub</div>
+              <div class="award-issuer">Google</div>
+            </div>
+            <div class="award-year">2024</div>
+          </div>
+          <div class="award">
+            <div class="award-no">05</div>
+            <div>
+              <div class="award-title">Foundations of Cybersecurity</div>
+              <div class="award-issuer">Google</div>
+            </div>
+            <div class="award-year">2023</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== LINER NOTES (ABOUT + CONTACT) ==================== -->
+      <section id="liner" aria-label="Liner notes and contact">
+        <div class="side-strip">
+          <span><span class="label">liner notes</span> · sleeve</span>
+          <span class="runtime">about · contact · colophon</span>
+        </div>
+        <h2 class="section-title">Liner <em>notes.</em></h2>
+
+        <div class="liner-grid">
+          <div class="liner-prose">
+            <p>
+              I'm a software engineer based in Wales. I work full-time at
+              <em>Hoowla</em>, where I build and maintain a legal
+              case-management platform across the full stack, and I run
+              <em>FrameKit Studios</em> in the evenings — a small label for the
+              tools and games I want to exist.
+            </p>
+            <p>
+              My work tends to sit between data and product. I came up through
+              software engineering, did an MSc in data science, and most of what
+              I build ends up combining the two: a degree calculator that
+              respects 90+ universities' rules, a chatbot that knows when to
+              stop guessing, an album poster generator that uses the actual
+              record metadata.
+            </p>
+            <p>
+              I'm interested in <em>tools that take a topic seriously</em>, in
+              shipping small things that work properly rather than big things
+              that don't, and in giving each project enough personality that it
+              doesn't feel like every other one. If that overlaps with what
+              you're working on — say hello.
+            </p>
+          </div>
+
+          <div>
+            <div class="credits">
+              <div class="credit">
+                <div class="credit-key">email</div>
+                <div class="credit-val">
+                  <a href="mailto:dafyddrhys.dev@gmail.com"
+                    >dafyddrhys.dev@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="credit">
+                <div class="credit-key">phone</div>
+                <div class="credit-val">
+                  <a href="tel:+447830047504">07830 047504</a>
+                </div>
+              </div>
+              <div class="credit">
+                <div class="credit-key">linkedin</div>
+                <div class="credit-val">
+                  <a
+                    href="https://linkedin.com/in/dafyddrhys"
+                    target="_blank"
+                    rel="noopener"
+                    >/in/dafyddrhys ↗</a
+                  >
+                </div>
+              </div>
+              <div class="credit">
+                <div class="credit-key">github</div>
+                <div class="credit-val">
+                  <a
+                    href="https://github.com/dafydd-rhys"
+                    target="_blank"
+                    rel="noopener"
+                    >@dafydd-rhys ↗</a
+                  >
+                </div>
+              </div>
+              <div class="credit">
+                <div class="credit-key">website</div>
+                <div class="credit-val">
+                  <a
+                    href="https://dafyddmaund.co.uk"
+                    target="_blank"
+                    rel="noopener"
+                    >dafyddmaund.co.uk ↗</a
+                  >
+                </div>
+              </div>
+              <div class="credit">
+                <div class="credit-key">based in</div>
+                <div class="credit-val">Wales, UK · open to remote</div>
+              </div>
+              <div class="credit">
+                <div class="credit-key">status</div>
+                <div class="credit-val" style="color: var(--green)">
+                  open to selected work
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <div class="colophon">
+        <span><span class="swatch">●</span> dm/01</span>
+        <span>type · fraunces / jetbrains mono</span>
+        <span>built by hand</span>
+      </div>
+      <div>
+        <span>© 2026 dafydd-rhys maund · pressed in wales</span>
+      </div>
+    </footer>
+
+    <!-- ==================== NOW PLAYING (FLOATING) ==================== -->
+    <aside class="now-playing" id="now-playing" aria-live="polite">
+      <div class="np-vinyl"></div>
+      <div class="np-text">
+        <div class="np-label"><span class="live-dot"></span>now playing</div>
+        <div class="np-track" id="np-track">side a · the engineer</div>
+      </div>
+    </aside>
+
+    <!-- Page-flip transition overlay -->
+    <div class="flip-overlay" id="flip-overlay" aria-hidden="true"></div>
+  </body>
 </html>
